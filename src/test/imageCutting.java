@@ -21,7 +21,6 @@ public class imageCutting {
 		FileSaver fs = null;
 		for(int i =0; i< imageWidth; i=i+128) {
 			for(int j = 0; j< imageHeight; j=j+128) {
-				
 				for(int k = 0; k< 128; k++)
 					for(int l = 0; l< 128; l++)
 						cutProcessor.putPixel(k, l, cutImage.getPixel(k+i, l+j));
